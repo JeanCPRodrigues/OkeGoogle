@@ -1,0 +1,161 @@
+/* IMPORTE A FONTE OPENSANS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --black-primary: #000000de;
+    --gray-primary: #5f63682a;
+    --gray-secondary: #80808075;
+}
+
+/* RESETE TUDO PARA O PADRAO */
+* {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    color: var(--black-primary);
+    min-width: 320px;
+    position: relative;
+    -webkit-transition: box-shadow 250ms;
+    transition: box-shadow 250ms;
+    margin: 10px 10px 10px 10px;
+}
+nav > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 4px;
+}
+nav > ul > li {
+    padding: 0px;
+    margin: 0px;
+    font-family: arial,sans-serif;
+    line-height: normal;
+    display: inline-block;
+    padding-left: 15px;
+}
+nav > ul > li:nth-child(3) > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 75px;
+}
+
+/* SVG MENUBAR */
+nav > ul > li:nth-child(3) > div > svg {
+    border-radius: 100%;
+    width: 30px;
+    fill: var(--black-primary);
+    padding: 5px;
+    transition: background .2s ease-in-out;
+    cursor: pointer;
+}
+nav > ul > li:nth-child(3) > div > svg:hover {
+    background: var(--gray-primary);
+}
+
+/* IMG USER MENUBAR */
+nav > ul > li:nth-child(3) > div > img {
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 2px;
+}
+nav > ul > li:nth-child(3) > div > img:hover {
+    background: var(--gray-primary);
+}
+
+/* LINK MENUBAR */
+nav > ul > li > a {
+    font: 13px/27px Roboto,Arial,sans-serif;
+    font-family: arial,sans-serif;
+    line-height: normal;
+    color: var(--black-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+nav > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* LOGO */
+.container-lg > .row:nth-child(1) > .col {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container-lg > .row:nth-child(1) > .col > .logo {
+    background-image: url('../img/svg/google_logo.svg');
+    forced-color-adjust: none;
+    height: 92px;
+    width: 272px;
+    position: relative;
+    color: var(--gray-secondary);
+}
+.container-lg > .row:nth-child(1) > .col > .logo > span {
+    font-size: 30pt;
+    font-weight: 900;
+    right: -40px;
+    top: -10px;
+    position: absolute;
+    transform: rotate(40deg);
+}
+
+/* INPUT SEACH */
+.form-control:focus {
+    color: var(--black-primary) !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0) !important;
+}
+.container-lg > .row:nth-child(2) > .col {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+.container-lg > .row:nth-child(2) > .col > div {
+    width: 500px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container-lg > .row:nth-child(2) > .col > div > span {
+    position: absolute;
+    left: 10px;
+    background-image: url('../img/svg/search.svg');
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    cursor: default;
+}
+.container-lg > .row:nth-child(2) > .col > div > input {
+    margin: 5px 0 5px 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    color: var(--black-primary);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12pt;
+    outline: 0;
+    padding-inline-start: 52px;
+    position: relative;
+    width: 100%;
+}
+
+/* LISTA DE HISTORICO */
