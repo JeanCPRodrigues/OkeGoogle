@@ -1,6 +1,9 @@
 /* IMPORTE A FONTE OPENSANS */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+/* IMPORT ICON BOOTSTRAP */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
 :root {
     --black-primary: #000000de;
     --gray-primary: #5f63682a;
