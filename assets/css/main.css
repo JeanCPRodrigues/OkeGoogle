@@ -13,6 +13,7 @@
     --gray-primary: #5f63682a;
     --gray-secondary: #80808075;
     --gray-background: #2021241a;
+    --gray-shadow: #20212451;
 }
 
 /* RESETE TUDO PARA O PADRAO */
@@ -104,9 +105,8 @@ nav > ul > li > a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 100px;
     width: 100%;
-    
 }
 .container-lg > .row:nth-child(1) > .col > .logo {
     
@@ -153,6 +153,7 @@ nav > ul > li > a:hover {
     position: relative;
     display: flex;
     align-items: center;
+    box-shadow: 0 1px 6px 0 var(--gray-shadow);
 }
 .container-lg > .row:nth-child(2) > .col > div > span {
     position: absolute;
@@ -196,17 +197,17 @@ nav > ul > li > a:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    border: 1px solid red;
     
 }
 .container-lg > .row:nth-child(2) > .row > .col > div {
-    border: 1px solid red;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     transition: background .2s ease-in-out;
+    border-radius: 5px;
+    
 }
 .container-lg > .row:nth-child(2) > .row > .col > div:hover {
     background: var(--gray-background);
@@ -238,24 +239,40 @@ nav > ul > li > a:hover {
     margin: 0px 0 10px 0;
 }
 
+/* RESPONSIVIDADE PARA TELA PEQUENA */
+@media only screen and (max-width: 480px) {
+
+    /* LOGO */
+    .container-lg > .row:nth-child(1) > .col {
+        margin-top: 60px;
+    }
+
+    /* INPUT SEACH */
+    .container-lg > .row:nth-child(2) > .col > div {
+        width: 100%;
+    }
+
+    /* INPUT SEACH */
+    .container-lg > .row:nth-child(2) > .col > div {
+        width: 90% !important;
+    }
+
+}
+
 /* RESPONSIVIDADE PARA TELA MEDIA */
 @media only screen and (max-width: 768px) {
 
     /* LISTA DE HISTORICO */
     .container-lg > .row:nth-child(2) > .row {
         margin: 0px;
-        width: 100% !important;
+        width: 90%;
     }
 
     /* INPUT SEACH */
     .container-lg > .row:nth-child(2) > .col > div {
         width: 70%;
     }
-    
-}
 
-/* RESPONSIVIDADE PARA TELA PEQUENA */
-@media only screen and (max-width: 480px) {
 }
 
 /* RESPONSIVIDADE PARA TELA GRANDE */
